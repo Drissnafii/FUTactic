@@ -10,10 +10,6 @@ FUTactic allows users to:
 - Calculate team chemistry based on player connections
 - Save team configurations locally
 
-## 📷 Screenshots
-
-[![Formation Selection](https://photos.app.goo.gl/Lwx1q73mBpeuRqdw5)]
-
 ## 🚀 Features
 
 - Dynamic player management
