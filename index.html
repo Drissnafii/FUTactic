@@ -53,5 +53,57 @@
     </nav>
   </header>
 
+  <!-- the form of adding a new player  -->
+  <div id="main-content">
+    <div id="player-form-container">
+        <form id="player-form">
+            <div class="form-group">
+              <label for="player-name">Nom du Joueur:</label>
+              <input type="text" id="player-name" name="player-name" required>
+            </div>
+          
+            <div class="form-group">
+              <label for="player-position">Position:</label>
+              <select id="player-position" name="player-position" required>
+                <option value="">Sélectionner une position</option>
+                <option value="GK">Gardien (GK)</option>
+                <option value="CB">Défenseur Central (CB)</option>
+                <option value="LB">Arrière Gauche (LB)</option>
+                <option value="RB">Arrière Droit (RB)</option>
+                <option value="CM">Milieu Central (CM)</option>
+                <option value="RM">Milieu Droit (RM)</option>
+                <option value="LM">Milieu Gauche (LM)</option>
+                <option value="LW">Ailier Gauche (LW)</option>
+                <option value="RW">Ailier Droit (RW)</option>
+                <option value="ST">Attaquant (ST)</option>
+              </select>
+            </div>
+          
+            <div class="form-group">
+              <label for="player-rating">Note (1-99):</label>
+              <input type="number" id="player-rating" name="player-rating" min="1" max="99" required>
+            </div>
+          
+            <div class="form-group">
+                  <label for="player-club">Club :</label>
+                  <input type="text" id="player-club" name="player-club">
+              </div>
+              <div class="form-group">
+                  <label for="player-league">Ligue :</label>
+                  <input type="text" id="player-league" name="player-league">
+              </div>
+              <div class="form-group">
+                  <label for="player-nation">Nationalité :</label>
+                  <input type="text" id="player-nation" name="player-nation">
+              </div>
+          
+            <button type="submit">Ajouter Joueur</button>
+          </form>
+    </div>
+    <div id="field"></div>
+  </div>
+
+  <!-- End of body  -->
+   <script src="assets/js/app.js"></script>
 </body>
 </html>
