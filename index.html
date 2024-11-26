@@ -54,7 +54,7 @@
   </header>
 
   <div class="page-header" id="pager-header" style="text-align: center;">
-    <div class="page-header-left xxs-column">
+    <div class="nousSomme">
       <ol class="breadcrumbs">
         <li class="breadcrumb"><a href="/">Home</a></li>
         <li class="breadcrumb active">
@@ -75,61 +75,88 @@
   <div id="main-content">
     <div class="player-controls-grid">
       <div class="player-form-container">
-        <div id="player-form-container">
-          <form id="player-form">
-            <div class="form-group">
-              <label for="player-name">Nom du Joueur:</label>
-              <input type="text" id="player-name" name="player-name" required>
-            </div>
-            <div class="form-group">
-              <label for="player-position">Position:</label>
-              <select id="player-position" name="player-position" required>
-                <option value="">Sélectionner une position</option>
-                <option value="GK">Gardien (GK)</option>
-                <option value="CB">Défenseur Central (CB)</option>
-                <option value="LB">Arrière Gauche (LB)</option>
-                <option value="RB">Arrière Droit (RB)</option>
-                <option value="CM">Milieu Central (CM)</option>
-                <option value="RM">Milieu Droit (RM)</option>
-                <option value="LM">Milieu Gauche (LM)</option>
-                <option value="LW">Ailier Gauche (LW)</option>
-                <option value="RW">Ailier Droit (RW)</option>
-                <option value="ST">Attaquant (ST)</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="player-rating">Note (1-99):</label>
-              <input type="number" id="player-rating" name="player-rating" min="1" max="99" required>
-            </div>
-            <div class="form-group">
-              <label for="player-club">Club :</label>
-              <input type="text" id="player-club" name="player-club">
-            </div>
-            <div class="form-group">
-              <label for="player-league">Ligue :</label>
-              <input type="text" id="player-league" name="player-league">
-            </div>
-            <div class="form-group">
-              <label for="player-nation">Nationalité :</label>
-              <input type="text" id="player-nation" name="player-nation">
-            </div>
-            <button type="submit">Ajouter Joueur</button>
-          </form>
-        </div>
+        <form id="player-form">
+          <div class="form-section">
+              <div class="form-group">
+                  <label for="player-name">Nom du Joueur</label>
+                  <input type="text" id="player-name" name="player-name" required>
+              </div>
+              <div class="form-group">
+                  <label for="player-position">Position</label>
+                  <select id="player-position" name="player-position" required>
+                      <option value="">Sélectionner une position</option>
+                      <option value="GK">Gardien (GK)</option>
+                      <option value="CB">Défenseur Central (CB)</option>
+                      <option value="LB">Arrière Gauche (LB)</option>
+                      <option value="RB">Arrière Droit (RB)</option>
+                      <option value="CM">Milieu Central (CM)</option>
+                      <option value="RM">Milieu Droit (RM)</option>
+                      <option value="LM">Milieu Gauche (LM)</option>
+                      <option value="LW">Ailier Gauche (LW)</option>
+                      <option value="RW">Ailier Droit (RW)</option>
+                      <option value="ST">Attaquant (ST)</option>
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="player-rating">Note (1-99)</label>
+                  <input type="number" id="player-rating" name="player-rating" min="1" max="99" required>
+              </div>
+              <div class="form-group">
+                  <label for="player-club">Club</label>
+                  <input type="text" id="player-club" name="player-club">
+              </div>
+              <div class="form-group">
+                  <label for="player-league">Ligue</label>
+                  <input type="text" id="player-league" name="player-league">
+              </div>
+              <div class="form-group">
+                  <label for="player-nation">Nationalité</label>
+                  <input type="text" id="player-nation" name="player-nation">
+              </div>
+              <div class="form-group">
+                  <label for="player-photo">Photo (URL)</label>
+                  <input type="url" id="player-photo" name="player-photo">
+              </div>
+              <div class="form-group">
+                  <label for="player-flag">Drapeau (URL)</label>
+                  <input type="url" id="player-flag" name="player-flag">
+              </div>
+              
+              <fieldset>
+                  <legend>Statistiques</legend>
+                  <div class="stats-grid">
+                      <div class="stats-group">
+                          <label for="player-pace">Vitesse</label>
+                          <input type="number" id="player-pace" name="player-pace" min="1" max="99">
+                      </div>
+                      <div class="stats-group">
+                          <label for="player-shooting">Tir</label>
+                          <input type="number" id="player-shooting" name="player-shooting" min="1" max="99">
+                      </div>
+                      <div class="stats-group">
+                          <label for="player-passing">Passe</label>
+                          <input type="number" id="player-passing" name="player-passing" min="1" max="99">
+                      </div>
+                      <div class="stats-group">
+                          <label for="player-dribbling">Dribble</label>
+                          <input type="number" id="player-dribbling" name="player-dribbling" min="1" max="99">
+                      </div>
+                      <div class="stats-group">
+                          <label for="player-defending">Défense</label>
+                          <input type="number" id="player-defending" name="player-defending" min="1" max="99">
+                      </div>
+                      <div class="stats-group">
+                          <label for="player-physical">Physique</label>
+                          <input type="number" id="player-physical" name="player-physical" min="1" max="99">
+                      </div>
+                  </div>
+              </fieldset>
+  
+              <button type="submit">Ajouter Joueur</button>
+          </div>
+        </form>
       </div>
-      <div class="bgTiran" 
-        style="
-        display: grid;
-        place-items: center;
-        background-image: url(/FUTactic/assets/css/stadium_background.webp);
-        border-radius: 8px;
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        overflow: hidden; ">
+      <div class="bgTiran">
         
         <div class="playersCardsGrid">
           <div id="cardlid1" class="terinPlayersCardes">
