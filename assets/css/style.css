@@ -7,7 +7,6 @@
 #main-content {
         font-family: Arial, sans-serif;
         background-image: url("/FUTactic/assets/css/SUU.webp");
-        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         min-height: 100vh;
@@ -167,7 +166,47 @@ nav {
   button[type="submit"]:hover {
     background-color: #76B06D;
   }
-  
+
+  /* header page styling  */
+  .page-header-left {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.breadcrumb a {
+    color: #FFC107;
+    text-decoration: none;
+}
+
+.breadcrumb.active i,
+.breadcrumb.active div {
+    color: #FFFFFF;
+}
+
+.page-header-top {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page-header-top-extra {
+    font-size: 1.2rem;
+    color: #B0B0B0;
+    text-align: center;
+}
+li.breadcrumb {
+    list-style: none;
+  }
+.player-controls-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-gap: 20px;
+    width: 100%;
+    background-color: transparent;
+  }
   
 @media (max-width: 768px) {
     .nav-links {
