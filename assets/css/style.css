@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-image: url("assets/css/stadium_background.webp");
-}
-
 #main-content {
         font-family: Arial, sans-serif;
         background-image: url("/FUTactic/assets/css/SUU.webp");
@@ -122,15 +117,6 @@ nav {
 #player-form button:hover {
     background-color: #1e7ebd;
 }
-#field {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    max-width: 800px;
-    background-color: #228B22;
-    border: 2px solid #000;
-    padding: 10px;
-}
 
 #player-form {
     background-color: #333333;
@@ -140,6 +126,10 @@ nav {
     color: #FFFFFF;
   }
   
+  select#player-position {
+    width: 238px;
+    height: 37.6px;
+  }
   .form-group {
     margin-bottom: 15px;
   }
