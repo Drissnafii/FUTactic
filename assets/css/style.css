@@ -6,6 +6,16 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-image: url("assets/css/stadium_background.webp");
+}
+
+#main-content {
+        font-family: Arial, sans-serif;
+        background-image: url("/FUTactic/assets/css/SUU.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
 }
 
 header {
@@ -84,6 +94,7 @@ nav {
 }
 
 #player-form-container {
+    margin-top: 2em;
     width: 300px;
     margin-bottom: 20px;
 }
