@@ -88,9 +88,9 @@
                   <select id="player-position" name="player-position" required>
                       <option value="">Sélectionner une position</option>
                       <option value="GK">Gardien (GK)</option>
-                      <option value="CB">Défenseur Central (CB)</option>
-                      <option value="LB">Arrière Gauche (LB)</option>
-                      <option value="RB">Arrière Droit (RB)</option>
+                      <option value="CB">Defenseur Central (CB)</option>
+                      <option value="LB">Arriere Gauche (LB)</option>
+                      <option value="RB">Arrire Droit (RB)</option>
                       <option value="CM">Milieu Central (CM)</option>
                       <option value="RM">Milieu Droit (RM)</option>
                       <option value="LM">Milieu Gauche (LM)</option>
@@ -154,7 +154,7 @@
                   </div>
               </fieldset>
   
-              <button type="submit">Ajouter Joueur</button>
+              <button type="button" id="addIt" onclick="GeneralShowing()">Ajouter Joueur</button>
           </div>
         </form>
       </div>
@@ -166,21 +166,21 @@
           <div id="lewel">
 
             <div id="cardlid1" class="terinPlayersCardes">
-              <button class="buttonTiranCardes">
+              <button class="buttonTiranCardes" id="ST">
                 <div class="player-role">Advanced Forward</div>
                 <div class="player-focus">Attack</div>
                 <div class="player-position">ST</div>
               </button>
             </div>
             <div id="cardlid2" class="terinPlayersCardes">
-              <button class="buttonTiranCardes">
+              <button class="buttonTiranCardes" id="ST">
                 <div class="player-role">Advanced Forward</div>
                 <div class="player-focus">Attack</div>
                 <div class="player-position">ST</div>
               </button>
             </div>
             <div id="cardlid3" class="terinPlayersCardes">
-              <button class="buttonTiranCardes">
+              <button class="buttonTiranCardes" id="LM">
                 <div class="player-role">Advanced Winger</div>
                 <div class="player-focus">Balanced</div>
                 <div class="player-position">LM</div>
@@ -193,21 +193,21 @@
           <div id="lwesst">
 
             <div id="cardlid4" class="terinPlayersCardes">
-              <button class="buttonTiranCardes">
+              <button class="buttonTiranCardes" id="CM">
                 <div class="player-role">Box-to-Box</div>
                 <div class="player-focus">Balanced</div>
                 <div class="player-position">CM</div>
               </button>
             </div>
             <div id="cardlid5" class="terinPlayersCardes">
-              <button class="buttonTiranCardes">
+              <button class="buttonTiranCardes" id="CDM">
                 <div class="player-role">Holding</div>
                 <div class="player-focus">Defend</div>
                 <div class="player-position">CDM</div>
               </button>
             </div>
             <div id="cardlid6" class="terinPlayersCardes">
-              <button class="buttonTiranCardes selected">
+              <button class="buttonTiranCardes selected" id="CM">
                 <div class="player-role">Box-to-Box</div>
                 <div class="player-focus">Balanced</div>
                 <div class="player-position">CM</div>
@@ -215,6 +215,7 @@
             </div>
             <div id="cardlid7" class="terinPlayersCardes">
               <button class="buttonTiranCardes">
+                <img src="/FUTactic/assets/css/" id="RM">
                 <div class="player-role">Winger</div>
                 <div class="player-focus">Balanced</div>
                 <div class="player-position">RM</div>
@@ -226,20 +227,20 @@
 
           <div id="difa3">
             <div id="cardlid8" class="terinPlayersCardes">
-              <button class="buttonTiranCardes">
+              <button class="buttonTiranCardes" id="CB">
                 <div class="player-role">Defender</div>
                 <div class="player-focus">Defend</div>
                 <div class="player-position">CB</div>
               </button>
             </div>
             <div id="cardlid9" class="terinPlayersCardes">
-              <button class="buttonTiranCardes">
+              <button class="buttonTiranCardes" id="CB">
                 <div class="player-role">Defender</div>
                 <div class="player-focus">Defend</div>
                 <div class="player-position">CB</div>
               </button>
             </div>
-            <div id="cardlid10" class="terinPlayersCardes">
+            <div id="cardlid10" class="terinPlayersCardes" id="CB">
               <button class="buttonTiranCardes">
                 <div class="player-role">Defender</div>
                 <div class="player-focus">Defend</div>
@@ -251,11 +252,11 @@
           <!-- l7ariiss  -->
 
           <div id="l7ariss">
-            <div id="cardlid11" class="terinPlayersCardes">
-              <button class="buttonTiranCardes">
-                <div class="player-role">Goalkeeper</div>
-                <div class="player-focus">Defend</div>
-                <div class="player-position">GK</div>
+            <div id="cardlid11" class="terinPlayersCardes" >
+              <button class="buttonTiranCardes" id="GK">
+                <img src="https://img.a.transfermarkt.technology/portrait/big/207834-1697055166.png?lm=1" style="width: 90px; height: 15vh; color: transparent;" id="GKimg">
+                <div id="nameX" style="height: 53px; background-color: rgb(222, 222, 107); text-align: center; display: flex; justify-content: center; align-items: center;">Name</div>
+                <div id="osition" style="height: 53px; background-color: rgb(100, 143, 90) ; display: flex; justify-content: center; align-items: center;">GK</div>
               </button>
             </div>
           </div>
