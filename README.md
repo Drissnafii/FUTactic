@@ -17,14 +17,6 @@ FUTactic allows users to:
 - **[GitHub Repository](https://github.com/Drissnafii/FUTactic)**
 - **[Hosted Website](https://drissnafii.github.io/FUTactic/)** 
 
-## 🚀 Features
-
-- Dynamic player management
-- Multiple formation support (4-4-2, 4-3-3)
-- Team chemistry calculation
-- Responsive design
-- Local storage integration
-
 ## 🛠️ Built With
 
 - HTML5
