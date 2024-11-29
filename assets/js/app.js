@@ -1,32 +1,26 @@
 function LivePlayerChanging() {
     
-    let nameX = document.getElementById('player-name').value
-    let position = document.getElementById('player-position').value
-    let SRCimage = document.getElementById('player-photo').value
-    // acceding to ouDiv
-    console.log(nameX)
-    console.log(position)
+    let myImageSource = document.getElementById('player-photo').value
+    let myName = document.getElementById('player-name').value
+    let myPosition = document.getElementById('player-position').value
+    let myNote = document.getElementById('player-note').value
+    let myClub = document.getElementById('player-Club').value
+    let myLigue = document.getElementById('player-ligue').value
+    let myNationalite = document.getElementById('player-nationalite').value
 
-    let changeName = document.getElementById('nameX')
-    changeName.textContent = nameX
-    
-    let changePosition = document.getElementById('osition')
-    changePosition.textContent = changePosition
+    // Going to change the targeted button (div)
+    let changeImageSource = document.querySelectorAll('.buttonCard-image')[0]
+    changeImageSource.src = myImageSource
 
-    let changeImg = document.getElementById('GKimg')
-    changeImg.src = SRCimage
+    let changeName = document.get
 }
-// addCard.addEventListener('click', X = () => {
-//     Z = LivePlayerChanging()
-//     console.log(Z)
-// })
+
 function showCard_CB() {
     LivePlayerChanging()
     let targetedCard = document.getElementById('CB')
     targetedCard.style.display = 'block'
 }
 function showCard_LB() {
-
     LivePlayerChanging()
     let targetedCard = document.getElementById('LB')
     targetedCard.style.display = 'block'
@@ -119,14 +113,15 @@ let Choice = document.getElementById('player-position').value
             console.log('Card 09')
             break;    
         case value = 'RB':
-            showCard_CM()
+            showCard_RB()
             console.log('Card 10')
             break;
         case value ='LB':
             showCard_LB()
             console.log('Card 11')
             break;
-        default: console.log('error')
+        default: console.log('Your Option is invalide || we are working to make validation in the form')
             break;
     }
 }
+
