@@ -33,11 +33,14 @@ function LivePlayerChanging() {
     changeNationalite.innerText = myNationalite
 
     let changeDrapeau = document.getElementById('buttonCard-drapeau-' + myPosition)
-    changeDrapeau.innerText = myDrapeau
+    changeDrapeau.src = myDrapeau
 
 }
 
 
+function GeneralShowing() {
+
+    
 
 function showCard_LW() {
     LivePlayerChanging()
@@ -96,46 +99,44 @@ function showCard_GK() {
 }
 
 
-function GeneralShowing() {
 let Choice = document.getElementById('get-FormPosition').value
 
-    switch (Choice) {
-        case Choice = 'LW':
+switch (Choice) {
+        case'LW':
             showCard_LW()
             break;
-        case Choice = 'ST':
+        case'ST':
             showCard_ST()
             break;
-        case Choice = 'RW':
+        case 'RW':
             showCard_RW()
             break;
-        case Choice = 'CM1':
+        case 'CM1':
             showCard_CM1()
             break;    
-        case Choice = 'CM2':
+        case 'CM2':
             showCard_CM2()
             break;    
-        case Choice = 'RM':
+        case 'RM':
             showCard_RM()
             break;
-        case Choice = 'CB1':
-            showCard_CB1
+        case 'CB1':
+            showCard_CB1()
             break;
-        case Choice= 'CB2':
+        case 'CB2':
             showCard_CB2()
             break;    
-        case Choice = 'CB3':
+        case 'CB3':
             showCard_CB3()
-            break;    
-        case Choice = 'GK':
+            break;
+        case 'GK':
             showCard_GK()
             break;
-        case Choice ='LM':
+        case 'LM':
             showCard_LM()
             break;
         default: console.log('Invalide OptionXXX')
             break;
     }
-    // console.log(GeneralShowing())
 }
 

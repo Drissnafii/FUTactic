@@ -102,7 +102,7 @@
               </div>
               <div class="form-group">
                   <label >Note (1-99)</label>
-                  <input type="number" id="get-note" name="player-rating" min="1" max="99" required>
+                  <input type="range" id="get-note" name="player-rating" min="0" max="100" required>
               </div>
               <div class="form-group">
                   <label >Club</label>
@@ -130,27 +130,27 @@
                   <div class="stats-gride-container">
                       <div class="stats-group">
                           <label for="player-pace">Vitesse</label>
-                          <input type="number" id="get-vitesse" name="player-pace" min="1" max="99">
+                          <input type="range" id="get-vitesse" name="player-pace" min="1" max="99">
                       </div>
                       <div class="stats-group">
                           <label for="player-shooting">Tir</label>
-                          <input type="number" id="get-tir" name="player-shooting" min="1" max="99">
+                          <input type="range" id="get-tir" name="player-shooting" min="1" max="99">
                       </div>
                       <div class="stats-group">
                           <label for="player-passing">Passe</label>
-                          <input type="number" id="get-passe" name="player-passing" min="1" max="99">
+                          <input type="range" id="get-passe" name="player-passing" min="1" max="99">
                       </div>
                       <div class="stats-group">
                           <label for="player-dribbling">Dribble</label>
-                          <input type="number" id="get-dribble" name="player-dribbling" min="1" max="99">
+                          <input type="range" id="get-dribble" name="player-dribbling" min="1" max="99">
                       </div>
                       <div class="stats-group">
                           <label for="player-defending">Defense</label>
-                          <input type="number" id="get-defence" name="player-defending" min="1" max="99">
+                          <input type="range" id="get-defence" name="player-defending" min="1" max="99">
                       </div>
                       <div class="stats-group">
                           <label for="player-physical">Physique</label>
-                          <input type="number" id="get-physique" name="player-physical" min="1" max="99">
+                          <input type="range" id="get-physique" name="player-physical" min="1" max="99">
                       </div>
                   </div>
               </fieldset>
@@ -166,10 +166,10 @@
         <div class="playerCardsFlex">
           <div id="lewel">
 
-            <div id="cardlid1" class="flexed__card-Class">
-              <button class="playerCardes--button" id="ST">
-                <img src="" id="buttonCard-image-LW">
-                <div id="buttonCard-Name-LW">Driss</div>
+            <div id="cardlid1" class="flexed__card-Class"">
+              <button class="playerCardes--button" id="LW" >
+                <img src="" id="buttonCard-image-LW" style="background-color: aquamarine; width: 100%; height: 50%;">
+                <div id="buttonCard-Name-LW" style="background-color: rgb(165, 165, 215);">Driss</div>
                 <div id="buttonCard-Position-LW">CB</div>
                 <div id="buttonCard-note-LW">60</div>
                 <div id="buttonCard-Club-LW">Liverpool</div>
@@ -181,7 +181,7 @@
             <div id="cardlid2" class="flexed__card-Class">
               <button class="playerCardes--button" id="ST">
                 <img src="" id="buttonCard-image-ST">
-                <div id="buttonCard-Name-ST">Driss</div>
+                <div id="buttonCard-Name-ST" style="background-color: rgb(174, 215, 165);" >Driss</div>
                 <div id="buttonCard-Position-ST">CB</div>
                 <div id="buttonCard-note-ST">60</div>
                 <div id="buttonCard-Club-ST">Liverpool</div>
@@ -193,7 +193,7 @@
             <div id="cardlid3" class="flexed__card-Class">
               <button class="playerCardes--button" id="LM">
                 <img src="" id="buttonCard-image-RW">
-                <div id="buttonCard-Name-RW">Driss</div>
+                <div id="buttonCard-Name-RW" style="background-color: rgb(212, 189, 100);">Driss</div>
                 <div id="buttonCard-Position-RW">CB</div>
                 <div id="buttonCard-note-RW">60</div>
                 <div id="buttonCard-Club-RW">Liverpool</div>
@@ -305,7 +305,7 @@
             <div id="cardlid11" class="flexed__card-Class" >
               <button class="playerCardes--button" id="GK">
                 <img src="" id="buttonCard-image-GK">
-                <div id="buttonCard-Name-GK">Driss</div>
+                <button id="buttonCard-Name-GK">Driss</button>
                 <div id="buttonCard-Position-GK">GK</div>
                 <div id="buttonCard-note-GK">60</div>
                 <div id="buttonCard-Club-GK">Liverpool</div>

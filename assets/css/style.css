@@ -172,6 +172,7 @@ li.breadcrumb {
     background-size: contain;
     align-items: center;
     display: flex;
+    flex-direction: column;
     background-image: url("https://www.futbin.com/design2/img/static/evolutions/placeholder-card-normal.webp");
 }
 
@@ -284,16 +285,12 @@ legend {
     flex-direction: column;
 }
 
-button[type="submit"]:hover {
-    background-color: var(--green-hover);
-    transform: translateY(-3px);
-    box-shadow: 0 7px 14px rgba(0,0,0,0.2);
-}
-
 .playerCardes--button {
     width: 100%;
-    display: none;
+    display: block;
+
 }
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
