@@ -1,127 +1,141 @@
+
 function LivePlayerChanging() {
     
-    let myImageSource = document.getElementById('player-photo').value
-    let myName = document.getElementById('player-name').value
-    let myPosition = document.getElementById('player-position').value
-    let myNote = document.getElementById('player-note').value
-    let myClub = document.getElementById('player-Club').value
-    let myLigue = document.getElementById('player-ligue').value
-    let myNationalite = document.getElementById('player-nationalite').value
+    let myPosition = document.getElementById('get-FormPosition').value
+    let myImageSource = document.getElementById('get-photo').value
+    let myName = document.getElementById('get-FormName').value
+    let myNote = document.getElementById('get-note').value
+    let myClub = document.getElementById('get-club').value
+    let myLigue = document.getElementById('get-ligue').value
+    let myNationalite = document.getElementById('get-nationalite').value
+    let myDrapeau = document.getElementById('get-drapeau').value
 
     // Going to change the targeted button (div)
-    let changeImageSource = document.querySelectorAll('.buttonCard-image')[0]
+    let changeImageSource = document.getElementById('buttonCard-image-' + myPosition)
     changeImageSource.src = myImageSource
+    
+    let changeName = document.getElementById('buttonCard-Name-' + myPosition)
+    changeName.innerText = myName
 
-    let changeName = document.get
+    let changePosition = document.getElementById('buttonCard-Position-' + myPosition)
+    changePosition.innerText = myPosition
+    
+    let changeNote = document.getElementById('buttonCard-note-' + myPosition)
+    changeNote.innerText = myNote
+
+    let changeClub = document.getElementById('buttonCard-Club-' + myPosition)
+    changeClub.innerText = myClub
+
+    let changeLigue = document.getElementById('buttonCard-ligue-' + myPosition)
+    changeLigue.innerText = myLigue
+
+    let changeNationalite = document.getElementById('buttonCard-nationalite-' + myPosition)
+    changeNationalite.innerText = myNationalite
+
+    let changeDrapeau = document.getElementById('buttonCard-drapeau-' + myPosition)
+    changeDrapeau.innerText = myDrapeau
+
 }
 
-function showCard_CB() {
-    LivePlayerChanging()
-    let targetedCard = document.getElementById('CB')
-    targetedCard.style.display = 'block'
-}
-function showCard_LB() {
-    LivePlayerChanging()
-    let targetedCard = document.getElementById('LB')
-    targetedCard.style.display = 'block'
-}
-function showCard_RB() {
-    LivePlayerChanging()
-    let targetedCard = document.getElementById('RB')
-    targetedCard.style.display = 'block'
-}
-function showCard_CM() {
-    LivePlayerChanging()
-    let targetedCard = document.getElementById('CM')
-    targetedCard.style.display = 'block'
-}
-function showCard_RM() {
-    LivePlayerChanging()
-    let targetedCard = document.getElementById('RM')
-    targetedCard.style.display = 'block'
-}
-function showCard_LM() {
-    LivePlayerChanging()
-    let targetedCard = document.getElementById('LM')
-    targetedCard.style.display = 'block'
-}
+
+
 function showCard_LW() {
     LivePlayerChanging()
-    let targetedCard1 = document.getElementById('LW')
-    targetedCard1.style.display = 'block'
-}
-function showCard_GK() {
-    LivePlayerChanging()
-    let targetedCard = document.getElementById('GK')
+    let targetedCard = document.getElementById('cardlid1')
     targetedCard.style.display = 'block'
 }
 function showCard_ST() {
     LivePlayerChanging()
-    let targetedCard = document.getElementById('ST')
+    let targetedCard = document.getElementById('cardlid2')
     targetedCard.style.display = 'block'
 }
 function showCard_RW() {
     LivePlayerChanging()
-    let targetedCard = document.getElementById('RW')
+    let targetedCard = document.getElementById('cardlid3')
+    targetedCard.style.display = 'block'
+}
+function showCard_LM() {
+    LivePlayerChanging()
+    let targetedCard = document.getElementById('cardlid4')
+    targetedCard.style.display = 'block'
+}
+function showCard_CM1() {
+    LivePlayerChanging()
+    let targetedCard = document.getElementById('cardlid5')
+    targetedCard.style.display = 'block'
+}
+function showCard_CM2() {
+    LivePlayerChanging()
+    let targetedCard = document.getElementById('cardlid6')
+    targetedCard.style.display = 'block'
+}
+function showCard_RM() {
+    LivePlayerChanging()
+    let targetedCard1 = document.getElementById('cardlid7')
+    targetedCard1.style.display = 'block'
+}
+function showCard_CB1() {
+    LivePlayerChanging()
+    let targetedCard = document.getElementById('cardlid8')
+    targetedCard.style.display = 'block'
+}
+function showCard_CB2() {
+    LivePlayerChanging()
+    let targetedCard = document.getElementById('cardlid9')
+    targetedCard.style.display = 'block'
+}
+function showCard_CB3() {
+    LivePlayerChanging()
+    let targetedCard = document.getElementById('cardlid10')
     targetedCard.style.display = 'block'
 }
 function showCard_GK() {
     LivePlayerChanging()
-    let targetedCard = document.getElementById('GK')
+    let targetedCard = document.getElementById('cardlid11')
     targetedCard.style.display = 'block'
 }
 
 
 function GeneralShowing() {
-let Choice = document.getElementById('player-position').value
+let Choice = document.getElementById('get-FormPosition').value
 
     switch (Choice) {
-        case Choice.value = 'GK':
-            showCard_GK()
-        console.log('Card 01')
-            break;
-        case Choice.value = 'CB':
-            showCard_CB()
-            console.log('Card 02')
-            break;
-        case Choice.value = 'RB':
-            showCard_RB()
-            console.log('Card 04')
-            break;
-        case Choice.value = 'LW':
+        case Choice = 'LW':
             showCard_LW()
-            console.log('Card 03')
-            break;    
-        case value = 'RW':
-            showCard_RW()
-            console.log('Card 05')
-            break;    
-        case value = 'ST':
+            break;
+        case Choice = 'ST':
             showCard_ST()
-            console.log('Card 06')
             break;
-        case value = 'LM':
-            showCard_LM
-            console.log('Card 07')
+        case Choice = 'RW':
+            showCard_RW()
             break;
-        case Choice.value= 'RM':
+        case Choice = 'CM1':
+            showCard_CM1()
+            break;    
+        case Choice = 'CM2':
+            showCard_CM2()
+            break;    
+        case Choice = 'RM':
             showCard_RM()
-        console.log('Card 08')
-            break;    
-        case value = 'CM':
-            showCard_CM()
-            console.log('Card 09')
-            break;    
-        case value = 'RB':
-            showCard_RB()
-            console.log('Card 10')
             break;
-        case value ='LB':
-            showCard_LB()
-            console.log('Card 11')
+        case Choice = 'CB1':
+            showCard_CB1
             break;
-        default: console.log('Your Option is invalide || we are working to make validation in the form')
+        case Choice= 'CB2':
+            showCard_CB2()
+            break;    
+        case Choice = 'CB3':
+            showCard_CB3()
+            break;    
+        case Choice = 'GK':
+            showCard_GK()
+            break;
+        case Choice ='LM':
+            showCard_LM()
+            break;
+        default: console.log('Invalide OptionXXX')
             break;
     }
+    // console.log(GeneralShowing())
 }
 
