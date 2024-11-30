@@ -68,6 +68,9 @@ nav {
     padding: 10px 15px;
     display: block;
 }
+.nav-links a:hover {
+    color: #4ebe35;
+}
 
 .nav-links a:hover {
     border-radius: 15px;
