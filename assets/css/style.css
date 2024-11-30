@@ -52,7 +52,9 @@ nav {
 }
 
 .nav-links {
-    list-style: none;
+    border-radius: 15px;
+    background-color: #011905;
+    list-style: none; /* I use it to remove the li point*/
     display: flex;
 }
 
@@ -68,10 +70,12 @@ nav {
 }
 
 .nav-links a:hover {
+    border-radius: 15px;
     background-color: #555;
 }
 
 .dropdown-content {
+    border-radius: 15px;
     display: none;
     position: absolute;
     background-color: #333;
