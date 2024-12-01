@@ -141,3 +141,16 @@ switch (Choice) {
 
 }
 
+// Making the add button in the heading sowing the form1 (logo) 
+
+
+
+function toPlayerForm() {
+    let logossNav = document.getElementById('logoD')
+    if (logossNav.style.display === 'none') {
+        logossNav.style.display = 'block'
+    } else {
+        logossNav.style.display = 'none'
+    }
+}
+

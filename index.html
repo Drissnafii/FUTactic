@@ -5,12 +5,15 @@
   <title>Simple Interface</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
 <body >
   <header id="headerX">
     <nav>
-      <div class="logo">
+      <div class="logo-container">
         <img src="assets/css/logo.png" alt="logo" style="border-radius: 25px;" id="logoD">
       </div>
       <div id="navLinksAndWeAre-Container">
@@ -50,12 +53,15 @@
               <i class="fas fa-bars"></i>
             </div> -->
           </ul>
+          <div id="addPlayerButton-Container">
+            <button id="addPlayerButton-button" onclick="toPlayerForm()"> + Add</button>
+          </div>
 
           <!-- We are part  -->
            <div id="weAre-Container" style="display: flex; flex-direction: column; align-items: center;">
             <div id="infoL">
               <h1 style="font-size: xx-large;">Futactic Team</h1>
-              <p style="padding: 1rem; margin-top: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus harum blanditiis eum tempore omnis voluptate, dolore quae consequuntur, sunt sit reprehenderit, ratione porro. Molestiae velit aliquam ratione consequuntur pariatur optio!</p>
+              <p id="parajs" style="padding: 1rem; margin-top: 1rem ; font-size: x-large; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus harum blanditiis eum tempore omnis voluptate, dolore quae consequuntur, sunt sit reprehenderit, ratione porro. Molestiae velit aliquam ratione consequuntur pariatur optio!</p>
             </div>
            </div>
       </div>
@@ -156,7 +162,7 @@
         <div class="playerCardsFlex">
           <div id="lewel">
 
-            <div id="cardlid1" class="flexed__card-Class"">
+            <div id="cardlid1" class="flexed__card-Class">
               <button class="playerCardes--button" id="LW" >
                 <img src="" id="buttonCard-image-LW" style="background-color: aquamarine; width: 100%; height: 50%;">
                 <div id="buttonCard-Name-LW" style="background-color: rgb(165, 165, 215);">Driss</div>
@@ -293,15 +299,15 @@
 
           <div id="l7ariss">
             <div id="cardlid11" class="flexed__card-Class" >
-              <button class="playerCardes--button" id="GK">
-                <img src="" id="buttonCard-image-GK">
-                <button id="buttonCard-Name-GK">Driss</button>
-                <div id="buttonCard-Position-GK">GK</div>
-                <div id="buttonCard-note-GK">60</div>
-                <div id="buttonCard-Club-GK">Liverpool</div>
-                <div id="buttonCard-ligue-GK">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-GK">CB</div>
-                <div id="buttonCard-drapeau-GK"></div>
+              <button class="playerCardes--button" id="RB">
+                <img src="" id="buttonCard-image-CB3">
+                <div id="buttonCard-Name-CB3">Driss</div>
+                <div id="buttonCard-Position-CB3">CB</div>
+                <div id="buttonCard-note-CB3">60</div>
+                <div id="buttonCard-Club-CB3">Liverpool</div>
+                <div id="buttonCard-ligue-CB3">Fussball-Bundesliga</div>
+                <div id="buttonCard-nationalite-CB3">CB</div>
+                <div id="buttonCard-drapeau-CB3"></div>
               </button>
             </div>
           </div>
