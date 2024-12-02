@@ -11,7 +11,7 @@ function LivePlayerChanging() {
     let myDrapeau = document.getElementById('get-drapeau').value
 
     // Going to change the targeted button (div)
-    let changeImageSource = document.getElementById('buttonCard-image-' + myPosition)
+    let changeImageSource = document.getElementById('buttonCard-image-' + myPosition) 
     changeImageSource.src = myImageSource
     
     let changeName = document.getElementById('buttonCard-Name-' + myPosition)
@@ -96,7 +96,6 @@ function showCard_GK() {
     LivePlayerChanging()
     let targetedCard = document.getElementById('cardlid11')
     targetedCard.style.display = 'block'
-    
 }
 
 
@@ -152,6 +151,11 @@ function toPlayerForm() {
         logossNav.style.display = 'block'
     } else {
         logossNav.style.display = 'none'
+        // let imhURL = document.createElement('img')
+        // imhURL.setAttribute('src', 'https://img.a.transfermarkt.technology/portrait/header/709969-1636472170.jpg?lm=1')
+
+        // let logoC = document.querySelector('.logo-container')
+        // logoC.appendChild(imhURL)
     }
 }
 

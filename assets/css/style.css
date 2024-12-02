@@ -11,7 +11,37 @@
 
 /* Logo controlling  */
 
-.imgPlayer{
+.club505{
+    background-color: rosybrown;
+}
+.ligue505{
+    background-color: var(--green-primary);
+}
+
+
+.infos303 {
+    background-color: #5E5F64;
+    position: absolute;
+    bottom: 24px;
+    width: 100%;
+    height: 15*3%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.name505 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    font-size: 15px;
+    font-weight: 500; 
+    background-color: rgb(165, 165, 215);
+    /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+}
+
+.image505{
     height: auto;
     width: 70px;
     border-radius: 10% 10% 0 / 0 0 10% 14%;
@@ -20,15 +50,17 @@
     right:0;
     box-shadow: 0 2px 4px 0;
 }
-.buttonCard-image h2{
+.note505 {
     position: absolute;
     top: 1rem;
     left: 1rem;
 }
 .buttonCard-image h3{
+    padding: 4px;
+    background-color: rgb(232, 99, 99);
     position: absolute;
     top: 2.8rem;
-    left: 1.2rem;
+    left: 1rem;
     font-size: 10px;
 }
 .buttonCard-image {
@@ -126,7 +158,6 @@ header {
     border-radius: 15px;
     background-color: #555;
 }
-
 
 .nav-links li {
     position: relative;
@@ -329,6 +360,7 @@ legend {
 }
 
 .playerCardes--button {
+    position: relative;
     height: 25vh;
     width: 20vh;
     display: block;
