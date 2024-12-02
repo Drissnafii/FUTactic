@@ -96,6 +96,7 @@ function showCard_GK() {
     LivePlayerChanging()
     let targetedCard = document.getElementById('cardlid11')
     targetedCard.style.display = 'block'
+    
 }
 
 

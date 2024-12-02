@@ -10,7 +10,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 </head>
-<body >
+<body>
+  
   <header id="headerX">
     <nav>
       <div class="logo-container">
@@ -20,33 +21,28 @@
         
       
           <ul class="nav-links" id="navLinks">
-            <li><a href="#players">Players</a></li>
+            <li><a href="#players">Players</a>
+              <ul class="dropdown-content">
+                <li><a href="#squad-builder">New players</a></li>
+                <li><a href="#community-squads">History</a></li>
+                <li><a href="#tactics">Tactics</a></li>
+              </ul></li>
             <li>
               <a href="#squad-builder">Squad Builder</a>
-              <ul class="dropdown-content">
-                <li><a href="#squad-builder">Squad Builder</a></li>
-                <li><a href="#community-squads">Community Squads</a></li>
-                <li><a href="#tactics">Tactics</a></li>
-              </ul>
             </li>
             <li>
               <a href="#sbc">SBCs</a>
-              <ul class="dropdown-content">
-                <li><a href="#active-sbcs">Active SBCs</a></li>
-                <li><a href="#cheapest-players">Cheapest Players</a></li>
-                <li><a href="#community-sbcs">Community SBCs</a></li>
-              </ul>
             </li>
             <li>
               <a href="#squads">Squads</a>
+            </li>
+            <li>
+              <a href="#market">Market</a>
               <ul class="dropdown-content">
                 <li><a href="#promo-squads">Promo Squads</a></li>
                 <li><a href="#fc-pro">FC Pro</a></li>
                 <li><a href="#team-of-the-week">Team of the Week</a></li>
               </ul>
-            </li>
-            <li>
-              <a href="#market">Market</a>
             </li>
 
             <!-- <div class="navbar-toggle">
@@ -61,7 +57,14 @@
            <div id="weAre-Container" style="display: flex; flex-direction: column; align-items: center;">
             <div id="infoL">
               <h1 style="font-size: xx-large;">Futactic Team</h1>
-              <p id="parajs" style="padding: 1rem; margin-top: 1rem ; font-size: x-large; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus harum blanditiis eum tempore omnis voluptate, dolore quae consequuntur, sunt sit reprehenderit, ratione porro. Molestiae velit aliquam ratione consequuntur pariatur optio!</p>
+
+              <p id="parajs" style="padding: 1rem; margin-top: 1rem ; font-size: x-large; ">
+                A web application for building and 
+                managing your Ultimate Team 
+                formations with chemistry calculations 
+                and tactical positioning.
+              </p>
+
             </div>
            </div>
       </div>
@@ -92,7 +95,7 @@
                     <option value="RM">Milieu Droit (RM)</option>
                     <option value="LW">Ailier Gauche (LW)</option>
                     <option value="ST">Attaquant (ST)</option>
-                    <option value="RW">Ailier Droit (RW)</option>                    
+                    <option value="RW">Ailier Droit (RW)</option>              
                   </select>
               </div>
               <div class="form-group">
@@ -120,35 +123,6 @@
                   <input type="url" id="get-drapeau" name="player-flag">
               </div>
               
-              <fieldset>
-                  <legend>Statistiques</legend>
-                  <div class="stats-gride-container">
-                      <div class="stats-group">
-                          <label for="player-pace">Vitesse</label>
-                          <input type="range" id="get-vitesse" name="player-pace" min="1" max="99">
-                      </div>
-                      <div class="stats-group">
-                          <label for="player-shooting">Tir</label>
-                          <input type="range" id="get-tir" name="player-shooting" min="1" max="99">
-                      </div>
-                      <div class="stats-group">
-                          <label for="player-passing">Passe</label>
-                          <input type="range" id="get-passe" name="player-passing" min="1" max="99">
-                      </div>
-                      <div class="stats-group">
-                          <label for="player-dribbling">Dribble</label>
-                          <input type="range" id="get-dribble" name="player-dribbling" min="1" max="99">
-                      </div>
-                      <div class="stats-group">
-                          <label for="player-defending">Defense</label>
-                          <input type="range" id="get-defence" name="player-defending" min="1" max="99">
-                      </div>
-                      <div class="stats-group">
-                          <label for="player-physical">Physique</label>
-                          <input type="range" id="get-physique" name="player-physical" min="1" max="99">
-                      </div>
-                  </div>
-              </fieldset>
             </div>
             <div id="addIt" style="display: flex; justify-content: center; align-items: center;">
               <button type="button" onclick="GeneralShowing()">Ajouter Joueur</button>
@@ -164,37 +138,49 @@
 
             <div id="cardlid1" class="flexed__card-Class">
               <button class="playerCardes--button" id="LW" >
-                <img src="" id="buttonCard-image-LW" style="background-color: aquamarine; width: 100%; height: 50%;">
-                <div id="buttonCard-Name-LW" style="background-color: rgb(165, 165, 215);">Driss</div>
-                <div id="buttonCard-Position-LW">CB</div>
-                <div id="buttonCard-note-LW">60</div>
-                <div id="buttonCard-Club-LW">Liverpool</div>
-                <div id="buttonCard-ligue-LW">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-LW">CB</div>
+                <div class="buttonCard-image">
+                  
+                  <img src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-LW">
+                  <h2 >28</h2>
+                  <h3 >LW</h3>
+                </div>
+                <div id="buttonCard-Name-LW" style="background-color: rgb(165, 165, 215);">
+                </div>
+                <div id="buttonCard-Position-LW">LW</div>
+                <div ></div>
+                <div id="buttonCard-Club-LW"></div>
+                <div id="buttonCard-ligue-LW"></div>
+                <div id="buttonCard-nationalite-LW"></div>
                 <div id="buttonCard-drapeau-LW"></div>
               </button>
             </div>
             <div id="cardlid2" class="flexed__card-Class">
               <button class="playerCardes--button" id="ST">
-                <img src="" id="buttonCard-image-ST">
-                <div id="buttonCard-Name-ST" style="background-color: rgb(174, 215, 165);" >Driss</div>
-                <div id="buttonCard-Position-ST">CB</div>
-                <div id="buttonCard-note-ST">60</div>
-                <div id="buttonCard-Club-ST">Liverpool</div>
-                <div id="buttonCard-ligue-ST">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-ST">CB</div>
+                <div class="buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-ST">
+                </div>
+                <div id="buttonCard-Name-ST" style="background-color: rgb(174, 215, 165);" ></div>
+                <div id="buttonCard-Position-ST">ST</div>
+                <div id="buttonCard-note-ST"></div>
+                <div id="buttonCard-Club-ST"></div>
+                <div id="buttonCard-ligue-ST"></div>
+                <div id="buttonCard-nationalite-ST"></div>
                 <div id="buttonCard-drapeau-ST"></div>
               </button>
             </div>
             <div id="cardlid3" class="flexed__card-Class">
               <button class="playerCardes--button" id="LM">
-                <img src="" id="buttonCard-image-RW">
-                <div id="buttonCard-Name-RW" style="background-color: rgb(212, 189, 100);">Driss</div>
-                <div id="buttonCard-Position-RW">CB</div>
-                <div id="buttonCard-note-RW">60</div>
-                <div id="buttonCard-Club-RW">Liverpool</div>
-                <div id="buttonCard-ligue-RW">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-RW">CB</div>
+                <div class="buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-RW">
+                </div>
+                <div id="buttonCard-Name-RW" style="background-color: rgb(212, 189, 100);"></div>
+                <div id="buttonCard-Position-RW">LM</div>
+                <div id="buttonCard-note-RW"></div>
+                <div id="buttonCard-Club-RW"></div>
+                <div id="buttonCard-ligue-RW"></div>
+                <div id="buttonCard-nationalite-RW"></div>
                 <div id="buttonCard-drapeau-RW"></div>
               </button>
             </div>
@@ -206,52 +192,65 @@
 
             <div id="cardlid4" class="flexed__card-Class">
               <button class="playerCardes--button" id="CM">
-                <img src="" id="buttonCard-image-LM">
-                <div id="buttonCard-Name-LM">Driss</div>
-                <div id="buttonCard-Position-LM">CB</div>
-                <div id="buttonCard-note-LM">60</div>
-                <div id="buttonCard-Club-LM">Liverpool</div>
-                <div id="buttonCard-ligue-LM">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-LM">CB</div>
+                <div class=" buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-LM">
+                </div>
+                <div id="buttonCard-Name-LM"></div>
+                <div id="buttonCard-Position-LM">CM1</div>
+                <div id="buttonCard-note-LM"></div>
+                <div id="buttonCard-Club-LM"></div>
+                <div id="buttonCard-ligue-LM"></div>
+                <div id="buttonCard-nationalite-LM"></div>
                 <div id="buttonCard-drapeau-LM"></div>
               </button>
             </div>
             <div id="cardlid5" class="flexed__card-Class">
               <button class="playerCardes--button" id="CDM">
-                <img src="" id="buttonCard-image-CM1">
-                <div id="buttonCard-Name-CM1">Driss</div>
-                <div id="buttonCard-Position-CM1">CB</div>
-                <div id="buttonCard-note-CM1">60</div>
-                <div id="buttonCard-Club-CM1">Liverpool</div>
-                <div id="buttonCard-ligue-CM1">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-CM1">CB</div>
+                <div class="buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-CM1">
+                </div>
+                <div id="buttonCard-Name-CM1"></div>
+                <div id="buttonCard-Position-CM1">CDM</div>
+                <div id="buttonCard-note-CM1"></div>
+                <div id="buttonCard-Club-CM1"></div>
+                <div id="buttonCard-ligue-CM1"></div>
+                <div id="buttonCard-nationalite-CM1"></div>
                 <div id="buttonCard-drapeau-CM1"></div>
               </button>
             </div>
             <div id="cardlid6" class="flexed__card-Class">
               <button class="playerCardes--button selected" id="CM">
-                <img src="" id="buttonCard-image-CM2">
-                <div id="buttonCard-Name-CM2">Driss</div>
-                <div id="buttonCard-Position-CM2">CB</div>
-                <div id="buttonCard-note-CM2">60</div>
-                <div id="buttonCard-Club-CM2">Liverpool</div>
-                <div id="buttonCard-ligue-CM2">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-CM2">CB</div>
+                <div class="buttonCard-image">
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-CM2">
+                </div>
+                <div id="buttonCard-Name-CM2"></div>
+                <div id="buttonCard-Position-CM2">CM</div>
+                <div id="buttonCard-note-CM2"></div>
+                <div id="buttonCard-Club-CM2"></div>
+                <div id="buttonCard-ligue-CM2"></div>
+                <div id="buttonCard-nationalite-CM2"></div>
                 <div id="buttonCard-drapeau-CM2"></div>
               </button>
             </div>
+
             <div id="cardlid7" class="flexed__card-Class">
-              <button class="playerCardes--button">
-                <img src="" id="buttonCard-image-RM">
-                <div id="buttonCard-Name-RM">Driss</div>
-                <div id="buttonCard-Position-RM">CB</div>
-                <div id="buttonCard-note-RM">60</div>
-                <div id="buttonCard-Club-RM">Liverpool</div>
-                <div id="buttonCard-ligue-RM">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-RM">CB</div>
+              <button class="playerCardes--button" id="RM" >
+                <div class="buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-RM">
+                </div>
+                <div id="buttonCard-Name-RM"></div>
+                <div id="buttonCard-Position-RM">RM</div>
+                <div id="buttonCard-note-RM"></div>
+                <div id="buttonCard-Club-RM"></div>
+                <div id="buttonCard-ligue-RM"></div>
+                <div id="buttonCard-nationalite-RM"></div>
                 <div id="buttonCard-drapeau-RM"></div>
               </button>
             </div>
+            
           </div>
 
           <!-- difa33333333333333333333333333333  -->
@@ -259,37 +258,46 @@
           <div id="difa3">
             <div id="cardlid8" class="flexed__card-Class">
               <button class="playerCardes--button" id="LB">
-                <img src="" id="buttonCard-image-CB1">
-                <div id="buttonCard-Name-CB1">Driss</div>
-                <div id="buttonCard-Position-CB1">CB</div>
-                <div id="buttonCard-note-CB1">60</div>
-                <div id="buttonCard-Club-CB1">Liverpool</div>
-                <div id="buttonCard-ligue-CB1">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-CB1">CB</div>
+                <div class="buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-CB1">
+                </div>
+                <div id="buttonCard-Name-CB1"></div>
+                <div id="buttonCard-Position-CB1">LB</div>
+                <div id="buttonCard-note-CB1"></div>
+                <div id="buttonCard-Club-CB1"></div>
+                <div id="buttonCard-ligue-CB1"></div>
+                <div id="buttonCard-nationalite-CB1"></div>
                 <div id="buttonCard-drapeau-CB1"></div>
               </button>
             </div>
             <div id="cardlid9" class="flexed__card-Class">
               <button class="playerCardes--button" id="CB">
-                <img src="" id="buttonCard-image-CB2">
-                <div id="buttonCard-Name-CB2">Driss</div>
+                <div class="buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-CB2">
+                </div>
+                <div id="buttonCard-Name-CB2"></div>
                 <div id="buttonCard-Position-CB2">CB</div>
-                <div id="buttonCard-note-CB2">60</div>
-                <div id="buttonCard-Club-CB2">Liverpool</div>
-                <div id="buttonCard-ligue-CB2">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-CB2">CB</div>
+                <div id="buttonCard-note-CB2"></div>
+                <div id="buttonCard-Club-CB2"></div>
+                <div id="buttonCard-ligue-CB2"></div>
+                <div id="buttonCard-nationalite-CB2"></div>
                 <div id="buttonCard-drapeau-CB2"></div>
               </button>
             </div>
             <div id="cardlid10" class="flexed__card-Class" >
               <button class="playerCardes--button" id="RB">
-                <img src="" id="buttonCard-image-CB3">
-                <div id="buttonCard-Name-CB3">Driss</div>
-                <div id="buttonCard-Position-CB3">CB</div>
-                <div id="buttonCard-note-CB3">60</div>
-                <div id="buttonCard-Club-CB3">Liverpool</div>
-                <div id="buttonCard-ligue-CB3">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-CB3">CB</div>
+                <div class="buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-CB3">
+                </div>
+                <div id="buttonCard-Name-CB3"></div>
+                <div id="buttonCard-Position-CB3">RB</div>
+                <div id="buttonCard-note-CB3"></div>
+                <div id="buttonCard-Club-CB3"></div>
+                <div id="buttonCard-ligue-CB3"></div>
+                <div id="buttonCard-nationalite-CB3"></div>
                 <div id="buttonCard-drapeau-CB3"></div>
               </button>
             </div>
@@ -298,18 +306,23 @@
           <!-- l7ariiss  -->
 
           <div id="l7ariss">
+            
             <div id="cardlid11" class="flexed__card-Class" >
               <button class="playerCardes--button" id="RB">
-                <img src="" id="buttonCard-image-CB3">
-                <div id="buttonCard-Name-CB3">Driss</div>
-                <div id="buttonCard-Position-CB3">CB</div>
-                <div id="buttonCard-note-CB3">60</div>
-                <div id="buttonCard-Club-CB3">Liverpool</div>
-                <div id="buttonCard-ligue-CB3">Fussball-Bundesliga</div>
-                <div id="buttonCard-nationalite-CB3">CB</div>
+                <div class="buttonCard-image">
+                  
+                  <img  src="https://img.a.transfermarkt.technology/portrait/header/3366-1683638749.jpg?lm=1" class="imgPlayer" id="buttonCard-image-CB3">
+                </div>
+                <div id="buttonCard-Name-CB3"></div>
+                <div id="buttonCard-Position-CB3">RB</div>
+                <div id="buttonCard-note-CB3"></div>
+                <div id="buttonCard-Club-CB3"></div>
+                <div id="buttonCard-ligue-CB3"></div>
+                <div id="buttonCard-nationalite-CB3"></div>
                 <div id="buttonCard-drapeau-CB3"></div>
               </button>
             </div>
+
           </div>
 
         </div>

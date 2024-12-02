@@ -11,8 +11,35 @@
 
 /* Logo controlling  */
 
+.imgPlayer{
+    height: auto;
+    width: 70px;
+    border-radius: 10% 10% 0 / 0 0 10% 14%;
+    position: absolute;
+    top:0;
+    right:0;
+    box-shadow: 0 2px 4px 0;
+}
+.buttonCard-image h2{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+.buttonCard-image h3{
+    position: absolute;
+    top: 2.8rem;
+    left: 1.2rem;
+    font-size: 10px;
+}
+.buttonCard-image {
+    position: relative;
+    height: 100%;
+    background-size: contain;
+    cursor: pointer;
+}
+
 .player-form-container {
-    display: none ;  /**/
+    display: none ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +48,12 @@
     padding: 20px;
 }
 
+.logo-container {
+    height: 100vh;
+}
+
 #logoD {
+    height: 90vh;
 }
 
 .Form-container33{
@@ -40,10 +72,10 @@ nav {
         background-size: cover;
         background-position: center;
         height: 100vh;
-}
+    }
 
 header {
-    background: linear-gradient(#15280c,#1e3115,#4d7937, #2A2A2A);
+    background: linear-gradient(#15280c,#182b10,#4d7937, #000000);
     color: #fff;
     padding: 10px 20px;
     height: 100vh;
@@ -60,9 +92,7 @@ header {
     gap: 2rem;
 }
 
-/* .logo img {
-    height: 32px;
-} */
+
  #navLinks {
     margin-top: 2rem;
  }
@@ -77,13 +107,10 @@ header {
 .nav-links {
     border-radius: 15px;
     background-color: #011905;
-    list-style: none; /* I use it to remove the li point*/
+    list-style: none; 
     display: flex;
 }
 
-.nav-links li {
-    position: relative;
-}
 
 .nav-links a {
     color: #fff;
@@ -100,6 +127,11 @@ header {
     background-color: #555;
 }
 
+
+.nav-links li {
+    position: relative;
+}
+
 .dropdown-content {
     border-radius: 15px;
     display: none;
@@ -109,15 +141,6 @@ header {
     padding: 0;
     min-width: 150px;
 }
-
-.dropdown-content a {
-    color: #fff;
-    padding: 10px 15px;
-    display: block;
-}
-li.breadcrumb {
-    list-style: none;
-  }
 
 .dropdown-content a:hover {
     background-color: #555;
@@ -134,7 +157,6 @@ li.breadcrumb {
     margin: 5px;
 }
 
-  /* header page styling  */
   .nousSomme {
     background-color: #2A2A2A;
     color: #FFFFFF;
@@ -149,9 +171,7 @@ li.breadcrumb {
     text-decoration: none; 
 }
 
-/* li.breadcrumb {
-    list-style: none;
-  } */
+
 .player-controls-grid {
     display: flex;
     flex-direction: row;
@@ -181,27 +201,37 @@ li.breadcrumb {
 }
 
 #lewel {
+    margin-bottom: -2rem;
     display: flex;
     gap: 4rem;
+    z-index: 333;
 }
+
 #lwesst {
     display: flex;
     gap: 4rem;
+    margin-bottom: -3rem;
+    z-index: 444;
 }
+
 #difa3 {
+    margin-bottom: -4rem;
     display: flex;
     gap: 4rem;
+    z-index: 555;
+}
+#l7ariss {
+    z-index: 10000;
 }
 .flexed__card-Class{
-    aspect-ratio: 13 / 19;
-    height: 162px;
-    background-size: contain;
-    flex-direction: column;
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     background-image: url(https://www.futbin.com/design2/img/static/evolutions/placeholder-card-normal.webp);
     background-repeat: no-repeat;
 }
 
-/* New styling of the form  */
+/* New styling of the form */
 
 :root {
     --dark-bg: #393f3da8;
@@ -299,8 +329,10 @@ legend {
 }
 
 .playerCardes--button {
-    width: 100%;
+    height: 25vh;
+    width: 20vh;
     display: block;
+    background-size: contain;
 }
 
 #addIt button{
@@ -350,7 +382,6 @@ background-color: #90d873;
     
 }
 @media (max-width: 320px) {
-    
     .player-controls-grid {
         display: flex;
         flex-direction: row;    
