@@ -64,6 +64,7 @@
     font-size: 10px;
 }
 .buttonCard-image {
+    z-index: 1;
     position: relative;
     height: 100%;
     background-size: contain;
@@ -213,16 +214,11 @@ header {
 
 
 .bgTiran {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-image: url(/FUTactic/assets/css/A.svg);
-    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .playerCardsFlex {
@@ -232,24 +228,21 @@ header {
 }
 
 #lewel {
-    margin-bottom: -2rem;
+    margin-bottom: -3rem;
     display: flex;
     gap: 4rem;
-    z-index: 333;
 }
 
 #lwesst {
     display: flex;
     gap: 4rem;
     margin-bottom: -3rem;
-    z-index: 444;
 }
 
 #difa3 {
     margin-bottom: -4rem;
     display: flex;
     gap: 4rem;
-    z-index: 555;
 }
 #l7ariss {
     z-index: 10000;

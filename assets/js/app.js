@@ -151,11 +151,11 @@ function toPlayerForm() {
         logossNav.style.display = 'block'
     } else {
         logossNav.style.display = 'none'
-        // let imhURL = document.createElement('img')
-        // imhURL.setAttribute('src', 'https://img.a.transfermarkt.technology/portrait/header/709969-1636472170.jpg?lm=1')
+        let imhURL = document.createElement('img')
+        imhURL.setAttribute('src', 'https://img.a.transfermarkt.technology/portrait/header/709969-1636472170.jpg?lm=1')
 
-        // let logoC = document.querySelector('.logo-container')
-        // logoC.appendChild(imhURL)
+        let logoC = document.querySelector('.logo-container')
+        logoC.appendChild(imhURL)
     }
 }
 
