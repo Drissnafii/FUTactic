@@ -12,10 +12,10 @@ FUTactic allows users to:
 
 ## 🔗 Links
 
-- **[Scrum Board](https://drissnafi3.atlassian.net/jira/software/projects/FUT/boards/4)** 
-- **[Presentation](https://www.canva.com/design/DAGXfaV0Fxo/o_XwWf6ybaGMRHbdSL3L3A/edit?utm_content=DAGXfaV0Fxo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
-- **[GitHub Repository](https://github.com/Drissnafii/FUTactic)**
-- **[Hosted Website](https://drissnafii.github.io/FUTactic/)** 
+3. **[GitHub Repository](https://github.com/Drissnafii/FUTactic)**
+1. **[Presentation](https://www.canva.com/design/DAGXfaV0Fxo/o_XwWf6ybaGMRHbdSL3L3A/edit?utm_content=DAGXfaV0Fxo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)**
+2. **[Scrum Board](https://drissnafi3.atlassian.net/jira/software/projects/FUT/boards/4)** 
+4. **[Hosted Website](https://drissnafii.github.io/FUTactic/)** 
 
 ## 🛠️ Built With
 
