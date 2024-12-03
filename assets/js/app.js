@@ -29,8 +29,8 @@ function LivePlayerChanging() {
     let changeLigue = document.getElementById('buttonCard-ligue-' + myPosition)
     changeLigue.innerText = myLigue
 
-    let changeNationalite = document.getElementById('buttonCard-nationalite-' + myPosition)
-    changeNationalite.innerText = myNationalite
+    // let changeNationalite = document.getElementById('buttonCard-nationalite-' + myPosition)
+    // changeNationalite.innerText = myNationalite
 
     let changeDrapeau = document.getElementById('buttonCard-drapeau-' + myPosition)
     changeDrapeau.src = myDrapeau

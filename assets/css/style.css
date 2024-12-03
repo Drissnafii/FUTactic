@@ -11,6 +11,12 @@
 
 /* Logo controlling  */
 
+#weAre-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .club505{
     background-color: rosybrown;
 }
@@ -245,7 +251,7 @@ header {
     z-index: 10000;
 }
 .flexed__card-Class{
-    display: block;
+    display: none;
     margin-top: 3rem;
     margin-bottom: 2rem;
     background-image: url(https://www.futbin.com/design2/img/static/evolutions/placeholder-card-normal.webp);
@@ -357,6 +363,15 @@ legend {
     background-size: contain;
 }
 
+
+
+/* Add it section  */
+
+#addIt {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
 #addIt button{
     background-color: #236d37;
     border: none;
@@ -369,6 +384,9 @@ legend {
     background-color: #164322;
     cursor: pointer;
 }
+
+
+
 
 /* styling the button of the header Add  */
 #addPlayerButton-button{
