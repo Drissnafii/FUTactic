@@ -101,14 +101,14 @@ nav {
 }
 
 #main-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         background-image: url("/FUTactic/assets/css/peopleGray.jpeg");
         background-size: cover;
         background-position: center;
         background-color: red;
         padding: 10px;
-    }
+}
 
 header {
     background: linear-gradient(#15280c,#182b10,#4d7937, #000000);
@@ -393,31 +393,12 @@ background-color: #90d873;
     .nav-links {
         display: none;
     }
-
-    #player-form-container {
-        width: 80%;
-    }
-    .player-controls-grid {
-        display: flex;
-        flex-direction: column;
-
-
-    }   
-    
+    /* #main-content {
+        display: grid;
+        background-image: url("/FUTactic/assets/css/peopleGray.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-color: red;
+        padding: 10px;
+} */
 }
-@media (max-width: 320px) {
-    .player-controls-grid {
-        display: flex;
-        flex-direction: row;    
-    }
-}
-
-@media (max-width: 1092px){
-    nav {
-        display: block;
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-    }
-} 
