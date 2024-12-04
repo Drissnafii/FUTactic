@@ -22,11 +22,11 @@
       
           <ul class="nav-links" id="navLinks">
             <li><a href="#players">Players</a>
-              <ul class="dropdown-content">
+              <!-- <ul class="dropdown-content">
                 <li><a href="#squad-builder">New players</a></li>
                 <li><a href="#community-squads">History</a></li>
                 <li><a href="#tactics">Tactics</a></li>
-              </ul></li>
+              </ul></li> -->
             <li>
               <a href="#squad-builder">Squad Builder</a>
             </li>
@@ -38,11 +38,11 @@
             </li>
             <li>
               <a href="#market">Market</a>
-              <ul class="dropdown-content">
+              <!-- <ul class="dropdown-content">
                 <li><a href="#promo-squads">Promo Squads</a></li>
                 <li><a href="#fc-pro">FC Pro</a></li>
                 <li><a href="#team-of-the-week">Team of the Week</a></li>
-              </ul>
+              </ul> -->
             </li>
 
           </ul>
@@ -80,19 +80,19 @@
                   <input type="text" id="get-FormName" name="player-name" required>
               </div>
               <div class="form-group">
-                  <label id="player-position">Position</label>
-                  <select id="get-FormPosition" required>
-                    <option value="GK">Gardien (GK)</option>
-                    <option value="CB1">Defenseur Central Gauche (CB)</option>
-                    <option value="CB2">Defenseur Central (CB)</option>
-                    <option value="CB3">Defenseur Central Droit (CB)</option>
-                    <option value="LM">Milieu Gauche (LM)</option>
-                    <option value="CM1">Milieu Central Gauche (CM)</option>
-                    <option value="CM2">Milieu Central Droit (CM)</option>
-                    <option value="RM">Milieu Droit (RM)</option>
-                    <option value="LW">Ailier Gauche (LW)</option>
-                    <option value="ST">Attaquant (ST)</option>
-                    <option value="RW">Ailier Droit (RW)</option>              
+                <label id="player-position">Position</label>
+                <select id="get-FormPosition" required>
+                  <option value="LW">Ailier Gauche (LW)</option>
+                  <option value="ST">Attaquant (ST)</option>
+                  <option value="RW">Ailier Droit (RW)</option>          
+                  <option value="LM">Milieu Gauche (LM)</option>
+                  <option value="CM1">Milieu Central Gauche (CM)</option>
+                  <option value="CM2">Milieu Central Droit (CM)</option>
+                  <option value="RM">Milieu Droit (RM)</option>
+                  <option value="CB1">Defenseur Central Gauche (CB)</option>
+                  <option value="CB2">Defenseur Central (CB)</option>
+                  <option value="CB3">Defenseur Central Droit (CB)</option>
+                  <option value="GK">Gardien (GK)</option>
                   </select>
               </div>
               <div class="form-group">
@@ -117,7 +117,7 @@
               </div>
               <div class="form-group">
                   <label >Drapeau (URL)</label>
-                  <input type="url" id="get-drapeau" name="player-flag">
+                  <input type="url" id="get-drapeau" name="player-flag" required>
               </div>
               
             </div>

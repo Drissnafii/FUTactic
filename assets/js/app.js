@@ -7,7 +7,7 @@ function LivePlayerChanging() {
     let myNote = document.getElementById('get-note').value
     let myClub = document.getElementById('get-club').value
     let myLigue = document.getElementById('get-ligue').value
-    let myNationalite = document.getElementById('get-nationalite').value
+    // let myNationalite = document.getElementById('get-nationalite').value
     let myDrapeau = document.getElementById('get-drapeau').value
 
     // Going to change the targeted button (div)
